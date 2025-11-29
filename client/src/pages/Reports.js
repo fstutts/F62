@@ -292,7 +292,11 @@ const Reports = () => {
             }}></div>
             {reportsData && (
                 <div style={{ marginTop: '15px', fontSize: '14px', color: '#333', backgroundColor: '#fff', padding: '10px', borderRadius: '4px' }}>
-                    <p><strong>Total VH Clones:</strong> {reportsData.toxinProfiles.reduce((sum, item) => sum + item.clones, 0)} clones analyzed across {reportsData.toxinProfiles.length} toxin types</p>
+                    <p><strong>Total VH Clones:</strong> This chart shows the number of Variable-Heavy or VH Clones that connect with and then counteract a specific toxin within a snake's venom. 
+                    VH Clones are obtained from the antibodies created when llamas and alpaca are injected with snake venoms. 
+                    These antibodies are then cloned to create a Variable-Heavy Domain of Heavy Chain library.
+                    Once the VH clones are created, they are paired with one of the seven toxins above to see how well they bind to and neutralize them using a Dissociation-Enhanced Lanthanide Fluorescence Immunoassay or DELFIA technique. 
+                    The DELFIA method is a time-resolved fluorescence test where the number of VH clones with a strong signal intensity that exceed the background level threshold are counted. {reportsData.toxinProfiles.reduce((sum, item) => sum + item.clones, 0)} clones were counted and analyzed across {reportsData.toxinProfiles.length} toxin types.</p>
 
                     <p style={{ marginBottom: '1.5rem' }}><strong>Source:</strong> <a href="https://www.nature.com/articles/s41586-025-09661-0/figures/2" target="_blank" rel="noopener noreferrer">Nature - Fig.2:a</a></p>
                 </div>
@@ -310,7 +314,10 @@ const Reports = () => {
             }}></div>
             {reportsData && (
                 <div style={{ marginTop: '15px', fontSize: '14px', color: '#333', backgroundColor: '#fff', padding: '10px', borderRadius: '4px' }}>
-                    <p><strong>Binding Analysis:</strong> Shows relative fluorescence units (RFU) for different toxin types. Higher values indicate stronger nanobody-toxin binding interactions.</p>
+                    <p><strong>Binding Analysis:</strong> This chart indicates how well the VH Clones bound to a specific toxin in vitro and disabled them. 
+                    For example, the neurotoxins sNTX and 1NTx cause nerve and muscle paralysis, the VH Clones created to combat them had a binding strength strong enough to completely hinder their neurotoxicity. 
+                    CTx is a cytotoxin that destroys cell tissue, AgTx affects neurotransmission by hindering enzymes, Og XI assists other toxins' ability to infiltrate tissues, KUN restricts proteases which can have negative effects on blood coagulation and ion channels, PLA₂ has numerous harmful consequences that are cytotoxic, myotoxic, and neurotoxic.
+                    The relative fluorescence units (RFU) are the measurements of the Expression-Normalized capture of DELFIA for the different toxin types. Higher measurements of RFU indicate stronger nanobody-toxin binding interactions which greatly mitigate the damage these toxins cause the body.</p>
 
                     <p style={{ marginBottom: '1.5rem' }}><strong>Source:</strong> <a href="https://www.nature.com/articles/s41586-025-09661-0/figures/2" target="_blank" rel="noopener noreferrer">Nature - Fig.2:b</a></p>
                 </div>
